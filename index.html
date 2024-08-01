@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Logo</div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-links">
+        <li class="home-link"><a href="#home">Home</a></li>
+        <li class="about-link"><a href="#about">About</a></li>
+        <li class="exp-link"><a href="#experiences">Experiences</a></li>
+        <li class="project-link"><a href="#projects">Projects</a></li>
+      </ul>
+      <button class="toggle-theme" onclick="toggleTheme()">
+        Toggle Dark/Light Mode
+      </button>
+    </nav>
+    <script src="script.js"></script>
+  </body>
+</html>
