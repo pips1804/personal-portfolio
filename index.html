@@ -4,17 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="media.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="assets/icons/letter-j.png"
+      type="image/x-icon"
+    />
     <title>My Portfolio</title>
   </head>
   <body>
     <nav class="navbar">
-      <div class="logo">Logo</div>
+      <div class="logo">Peepz</div>
       <div class="hamburger" onclick="toggleMenu()">
         <div class="bar"></div>
         <div class="bar"></div>
@@ -23,13 +31,162 @@
       <ul class="nav-links">
         <li class="home-link"><a href="#home">Home</a></li>
         <li class="about-link"><a href="#about">About</a></li>
-        <li class="exp-link"><a href="#experiences">Experiences</a></li>
-        <li class="project-link"><a href="#projects">Projects</a></li>
+        <li class="exp-link"><a href="#skills">Skills</a></li>
+        <li class="project-link"><a href="#activities">Activities</a></li>
+        <li class="project-link"><a href="#footer">Contact</a></li>
       </ul>
       <button class="toggle-theme" onclick="toggleTheme()">
-        Toggle Dark/Light Mode
+        <img
+          src="/assets/icons/dark-mode.png"
+          alt=""
+          class="switch-mode-icon"
+        />
       </button>
     </nav>
+
+    <main>
+      <section class="profile-container" id="home">
+        <img
+          src="assets/images/me.jpg"
+          alt=""
+          class="profile-pic"
+          data-aos="fade-left"
+          data-aos-duration="1200"
+          id="profile"
+        />
+        <div
+          class="profile-desc"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <p class="name">Jhon Paul Manlapaz</p>
+          <p class="profession">3rd Year BSIT Student</p>
+        </div>
+      </section>
+
+      <section class="about-me-container" id="about">
+        <p class="title" data-aos="fade-up" data-aos-duration="1000">
+          About Me
+        </p>
+        <p class="about-me-desc" data-aos="fade-up" data-aos-duration="1000">
+          I am a 3rd-year BSIT student at Pambayang Dalubhasaan ng Marilao, and
+          I chose this course because I’ve always been passionate about
+          technology. My goal is to become a frontend developer in the future.
+          Outside of my studies, I love listening to music, especially PPop,
+          KPop, and Indie, and I enjoy playing online games. I also like
+          spending time hanging out with friends whenever I can.
+        </p>
+      </section>
+
+      <section class="skills-container" id="skills">
+        <p class="title" data-aos="fade-up" data-aos-duration="1000">Skills</p>
+        <div class="progress-bar-container">
+          <div class="container" data-aos="fade-up" data-aos-duration="1000">
+            <div class="skill-box">
+              <span class="skill-title"> HTML </span>
+              <div class="skill-bar">
+                <span class="skill-per">
+                  <span class="tooltip">80%</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="container" data-aos="fade-up" data-aos-duration="1000">
+            <div class="skill-box">
+              <span class="skill-title"> CSS </span>
+              <div class="skill-bar">
+                <span class="skill-per css">
+                  <span class="tooltip">70%</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="container" data-aos="fade-up" data-aos-duration="1200">
+            <div class="skill-box">
+              <span class="skill-title"> Javascript </span>
+              <div class="skill-bar">
+                <span class="skill-per js">
+                  <span class="tooltip">45%</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="container" data-aos="fade-up" data-aos-duration="1200">
+            <div class="skill-box">
+              <span class="skill-title"> Python </span>
+              <div class="skill-bar">
+                <span class="skill-per python">
+                  <span class="tooltip">40%</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="activities-container" id="activities">
+        <p class="title" data-aos="fade-up" data-aos-duration="1000">
+          Activities
+        </p>
+        <div class="card-container">
+          <div class="card" data-aos="fade-up" data-aos-duration="1200">
+            <p class="activity-title">Activity 2-4</p>
+            <div class="image-container act2-4"></div>
+            <button>
+              <a href="https://manlapazact4.netlify.app" target="_blank"
+                >Visit Here!</a
+              >
+            </button>
+          </div>
+
+          <div class="card" data-aos="fade-up" data-aos-duration="1200">
+            <p class="activity-title">Activity 5</p>
+            <div class="image-container act5"></div>
+            <button>
+              <a href="https://manlapaz-act5-hover.netlify.app/" target="_blank"
+                >Visit Here!</a
+              >
+            </button>
+          </div>
+
+          <div class="card" data-aos="fade-up" data-aos-duration="1200">
+            <p class="activity-title">Activity 6</p>
+            <div class="image-container act6"></div>
+            <button>
+              <a href="https://manlapaz-act6.netlify.app" target="_blank">
+                Visit Here!</a
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer-container" id="footer">
+        <div class="social-container">
+          <a href="https://www.facebook.com/jhonpaulgm" target="_blank"
+            ><img src="assets/icons/facebook.png" alt=""
+          /></a>
+          <a href="mailto: jhonpaulmanlapaz1804@gmail.com" target="_blank"
+            ><img src="assets/icons/email.png" alt=""
+          /></a>
+          <a href="https://github.com/pips1804" target="_blank"
+            ><img src="assets/icons/github.png" alt=""
+          /></a>
+        </div>
+        <div class="footer-text">
+          <p class="credits">&copy; 2024 Manlapaz</p>
+          <p>All rights reserved</p>
+        </div>
+      </footer>
+    </main>
+
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
